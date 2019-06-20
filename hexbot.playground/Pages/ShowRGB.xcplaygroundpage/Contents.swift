@@ -72,8 +72,11 @@ class MyViewController : UIViewController {
                 DispatchQueue.main.async {
                     self.colorView.backgroundColor = colorVal
                     self.redLabel.textColor = UIColor(red: rgba.red, green: 0, blue: 0, alpha: 1)
+                    self.redLabel.text = "Red \(Int(rgba.red * 255))"
                     self.greenLabel.textColor = UIColor(red: 0, green: rgba.green, blue: 0, alpha: 1)
+                    self.greenLabel.text = "Green \(Int(rgba.green * 255))"
                     self.blueLabel.textColor = UIColor(red: 0, green: 0, blue: rgba.blue, alpha: 1)
+                    self.blueLabel.text = "Blue \(Int(rgba.blue * 255))"
                 }
             })
         }
